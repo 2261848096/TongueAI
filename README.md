@@ -17,7 +17,6 @@ TongueAI 使用计算机视觉与深度学习技术，将舌象分析流程自�
 3. 提取舌象视觉特征
 4. 多任务学习同时预测多个舌象属性
 
-
 整体采用两阶段架构：
 
 Image
@@ -162,53 +161,6 @@ json
         "1": "齿痕舌"
     }
 }
-
-项目结构
-
-TongueAI
-│
-├── tongue_seg
-│
-│   ├── train.py
-│   ├── predict.py
-│   ├── dataset
-│   │
-│   ├── weights
-│   │     └── best.pt
-│   │
-│   └── output_roi
-│
-│
-├── tongue_classify
-│
-│   ├── datasets
-│   │     └── tongue_dataset.py
-│   │
-│   ├── models
-│   │
-│   │     ├── efficientnet.py
-│   │     ├── classification_head.py
-│   │     └── multitask.py
-│   │
-│   ├── utils
-│   │
-│   │     ├── loss.py
-│   │     ├── metrics.py
-│   │     └── logger.py
-│   │
-│   ├── train.py
-│   ├── val.py
-│   ├── predict.py
-│   │
-│   ├── configs
-│   │     └── train.yaml
-│   │
-│   └── weights
-│         └── best.pth
-│
-│
-├── README.md
-└── requirements.txt
 
 环境配置
 
