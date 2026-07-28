@@ -1,0 +1,21 @@
+# ---- Datasets (large raw data, do not track) ----
+dataset/
+*/dataset/
+
+# ---- Inference output examples ----
+output_seg/
+roi/
+roiContext/
+mask/
+
+# ---- Intermediate training checkpoints (keep only best.pt / last.pt) ----
+**/weights/epoch*.pt
+
+# ---- Python caches ----
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- AutoDL / system ----
+.autodl/
+.ipynb_checkpoints/

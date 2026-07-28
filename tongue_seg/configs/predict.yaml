@@ -1,0 +1,26 @@
+model:
+ /root/project/tongue_seg/models/weights/best.pt
+
+
+source:
+  dataset/test/images
+
+
+imgsz:
+  1024
+
+
+conf:
+  0.5
+
+
+iou:
+  0.7
+
+
+device:
+  0
+
+
+save_dir:
+  results

@@ -1,0 +1,182 @@
+# ==================================================
+# Random Seed
+# ==================================================
+
+seed: 42
+
+# ==================================================
+# Dataset
+# ==================================================
+
+dataset:
+
+  train:
+    dataset/train/labels/train.xlsx
+
+  val:
+    dataset/val/labels/val.xlsx
+
+  test:
+    dataset/test/labels/test.xlsx
+
+
+  train_image_dir:
+    dataset/train/images
+
+  val_image_dir:
+    dataset/val/images
+
+  test_image_dir:
+    dataset/test/images 
+
+  img_size: 300
+
+# ==================================================
+# Data Augmentation
+# ==================================================
+
+augmentation:
+
+  # 随机旋转
+  rotation:
+
+    enable: true
+
+    degrees: 5
+
+
+  # 平移
+  translate:
+
+    enable: true
+
+    range: 0.05
+
+
+  # 缩放
+  scale:
+
+    enable: true
+
+    range: 0.1
+
+
+  # 颜色扰动
+  color_jitter:
+
+    enable: true
+
+    brightness: 0.2
+
+    contrast: 0.2
+
+    saturation: 0.2
+
+    hue: 0.05
+
+# ==================================================
+# Model
+# ==================================================
+
+model:
+
+  name:
+
+    tf_efficientnet_b3_ns
+
+  pretrained:
+
+    /root/autodl-tmp/project/tongue_classify/model/pretrained/tf_efficientnet_b3_ns.safetensors
+
+
+
+  num_classes:
+
+    tongue_color: 3
+
+    coat_color: 3
+
+    coat_thickness: 2
+
+    crack: 2
+
+    teeth_mark: 2
+
+
+# ==================================================
+# Training
+# ==================================================
+
+train:
+
+  epochs: 100
+
+  batch_size: 16
+
+  num_workers: 8
+
+  optimizer:
+
+    name: AdamW
+
+    lr: 0.000005
+
+    weight_decay: 0.0005
+
+  # 学习率策略
+  scheduler:
+
+    name: cosine
+
+    min_lr: 0.000001
+
+  # AMP混合精度
+
+  amp: true
+
+# ==================================================
+# Loss
+# ==================================================
+
+loss:
+  # 多任务loss权重
+  weights:
+
+    tongue_color: 1.0
+
+    coat_color: 1.0
+
+    coat_thickness: 1.0
+
+    crack: 1.5
+
+    teeth_mark: 1.5
+
+# ==================================================
+# Early Stopping
+# ==================================================
+
+early_stop:
+
+  enable: true
+
+  patience: 35
+
+  monitor:
+    val_loss
+
+  mode:
+    min
+
+# ==================================================
+# Checkpoint
+# ==================================================
+
+checkpoint:
+
+  save_dir:
+
+    /root/autodl-tmp/project/tongue_classify/checkpoints
+
+  save_best_only: true
+  resume: false

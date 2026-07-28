@@ -1,0 +1,52 @@
+[
+  {
+    "index": 28,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 29,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 65,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 74,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 98,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 99,
+    "true": 0,
+    "pred": 1
+  },
+  {
+    "index": 105,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 106,
+    "true": 0,
+    "pred": 1
+  },
+  {
+    "index": 125,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 134,
+    "true": 1,
+    "pred": 0
+  }
+]

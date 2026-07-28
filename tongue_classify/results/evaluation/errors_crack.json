@@ -1,0 +1,37 @@
+[
+  {
+    "index": 8,
+    "true": 0,
+    "pred": 1
+  },
+  {
+    "index": 30,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 35,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 87,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 97,
+    "true": 1,
+    "pred": 0
+  },
+  {
+    "index": 114,
+    "true": 0,
+    "pred": 1
+  },
+  {
+    "index": 137,
+    "true": 1,
+    "pred": 0
+  }
+]
