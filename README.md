@@ -383,18 +383,3 @@ loss_weights:
 - [ ] 与中医知识库 RAG 系统融合
 - [ ] 构建完整 AI 辅助舌诊平台
 
----
-
-## 10. License
-
-This project is for academic research and medical AI exploration only.
-
----
-
-如果你愿意，我还可以继续把这个 README 再升级成：
-
-1. 更偏“GitHub 风格”的版本（适合展示给别人看）
-2. 更偏“项目说明书”风格的版本（适合论文/汇报）
-3. 更偏“简洁版”首页版本（适合直接放在仓库首页）
-
-你可以直接告诉我你想要哪种风格，我帮你继续精修。
